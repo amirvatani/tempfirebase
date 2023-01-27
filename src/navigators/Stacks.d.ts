@@ -4,6 +4,7 @@ export type StackParamList = {
   LoginScreen: any
   RegisterScreen: any
   ResetPasswordScreen: any
+  Dashboard: any
 }
 
 export type TStacks = keyof StackParamList

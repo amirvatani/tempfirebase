@@ -5,9 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
-import { Dashboard } from '../containers/home'
 import { FIREBASE_CONFIG } from '../core/config'
 import { authNavigation } from '../containers/auth'
+import { homeNavigation } from '../containers/home'
 
 const Stack = createStackNavigator()
 if (!firebase.apps.length) {
@@ -24,7 +24,7 @@ export const ApplicationNavigator = () => {
         }}
       >
         {authNavigation()}
-        <Stack.Screen name="Dashboard" component={Dashboard} />
+        {homeNavigation()}
       </Stack.Navigator>
     </NavigationContainer>
   )

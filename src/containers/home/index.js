@@ -1,1 +1,1 @@
-export { default as Dashboard } from './Screens/Dashboard'
+export * from './navigation'
